@@ -20,6 +20,8 @@ const config: Config = {
         'fade-in-up': 'fadeInUp 0.6s ease-out',
         'slide-in-left': 'slideInLeft 0.5s ease-out',
         'bounce-soft': 'bounce-soft 2s infinite',
+        'slide-in-right': 'slideInRight 0.3s ease-out',
+        'slide-out-right': 'slideOutRight 0.3s ease-in',
       },
     },
   },

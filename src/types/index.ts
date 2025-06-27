@@ -47,4 +47,27 @@ export interface OrderStatus {
   value: 'solicitado' | 'confirmado' | 'rechazado' | 'entregado';
   label: string;
   color: string;
+}
+
+export interface ToastType {
+  id: string;
+  type: 'success' | 'error' | 'warning' | 'info';
+  title: string;
+  message?: string;
+  duration?: number;
+  action?: {
+    label: string;
+    onClick: () => void;
+  };
+}
+
+export interface ToastContextType {
+  toasts: ToastType[];
+  addToast: (toast: Omit<ToastType, 'id'>) => void;
+  removeToast: (id: string) => void;
+  clearToasts: () => void;
+  success: (title: string, message?: string, options?: Partial<ToastType>) => string;
+  error: (title: string, message?: string, options?: Partial<ToastType>) => string;
+  warning: (title: string, message?: string, options?: Partial<ToastType>) => string;
+  info: (title: string, message?: string, options?: Partial<ToastType>) => string;
 } 

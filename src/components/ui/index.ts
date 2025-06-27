@@ -2,4 +2,9 @@
 export { Navbar } from './navbar';
 export { HeroSection } from './hero-section';
 export { ThemeToggle } from './theme-toggle';
-export { FeaturedProducts } from './featured-products'; 
+export { FeaturedProducts } from './products';
+export { TrustElements } from './trust-elements';
+export { Footer } from './footer';
+export { Toast } from './toast';
+export { ToastContainer } from './toast-container';
+export { ToastDemo } from './toast-demo'; 
